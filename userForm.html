@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="cider co user form" />
+    <link rel="stylesheet" href="cssFiles/form.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <form id="userForm">
+        <fieldset>
+          <legend>Customer complaints/feedback form</legend>
+          <label for="userName"
+            >User Name
+            <input
+              type="text"
+              id="userName"
+              name="userName"
+              placeholder="key in your name"
+            />
+          </label>
+          <label for="usertel"
+            >User Telephone Number
+            <input
+              type="text"
+              id="userTel"
+              name="userTel"
+              placeholder="your telephone number"
+            />
+          </label>
+          <select name="userCat" id="userCat">
+            <option value="advice">select one from list</option>
+            <option value="consumer">Consumer</option>
+            <option value="customer">Customer</option>
+            <option value="authority">authority</option>
+          </select>
+          <button type="submit" id="formSubButton"></button>
+        </fieldset>
+      </form>
+    </main>
+    <footer></footer>
+    <script src="jsFiles/userform.js"></script>
+  </body>
+</html>
