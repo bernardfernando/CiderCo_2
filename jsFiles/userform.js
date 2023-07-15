@@ -4,10 +4,10 @@ let messageLog = [];
 
 //form connection
 const userForm = document.getElementById("userForm");
-
 //Event listener
 userForm.addEventListener("submit", onFormSubmit);
 //form submission first state event default prevention
+console.log("check Submit");
 
 function onFormSubmit(event) {
   event.preventDefault();
@@ -15,20 +15,20 @@ function onFormSubmit(event) {
 }
 
 function collectFormData() {
-  const userName = document.getElementById("userName").Value;
+  const userName = document.getElementById("userName").value;
   const userTel = document.getElementById("userTel").value;
   const userCat = document.getElementById("userCat").value;
+
+  const messHan = new MessageHandle(userName, userTel, userCat);
 }
 
 function MessageHandle(userNameArg, userTelArg, userCatArg) {
-  this.userNameArg = userName;
-  this.userTelArg = userTel;
-  this.userCatArg = userCat;
+  this.userName = userNameArg;
+  this.userTel = userTelArg;
+  this.userCat = userCatArg;
   messageLog.push(this);
   setLocalStorage();
 }
-
-const messHan = new MessageHandle(userName, userTel, userCat);
 
 // passing information to local storage
 function setLocalStorage() {

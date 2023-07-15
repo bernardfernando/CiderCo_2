@@ -18,8 +18,9 @@
             <input
               type="text"
               id="userName"
-              name="userName"
+              name="userNameN"
               placeholder="key in your name"
+              required
             />
           </label>
           <label for="usertel"
@@ -27,8 +28,9 @@
             <input
               type="text"
               id="userTel"
-              name="userTel"
+              name="userTelT"
               placeholder="your telephone number"
+              required
             />
           </label>
           <select name="userCat" id="userCat">
@@ -37,7 +39,8 @@
             <option value="customer">Customer</option>
             <option value="authority">authority</option>
           </select>
-          <button type="submit" id="formSubButton"></button>
+          <button type="submit" id="formSubButton">Submit</button>
+          <button type="reset" id="formResetButton">Reset</button>
         </fieldset>
       </form>
     </main>

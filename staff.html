@@ -14,8 +14,37 @@
     <main>
       <div class="table_button">
         <div class="button">
-          <button type="click" id="staffButt">Staff Button</button>
+          <button type="click" id="staffButt" class="open-button">
+            Staff Button
+          </button>
         </div>
+        <!--access control      -->
+        <div id="accessForm" class="form-popup">
+          <form class="formContainer">
+            <h1>Staff access</h1>
+            <label for="staffName">User Name</label>
+            <input
+              type="text"
+              placeholder="Enter staff name"
+              name="staffName"
+              id="staffName"
+              required
+            />
+            <label for="psw">Password</label>
+            <input
+              type="password"
+              placeholder="Enter password"
+              name="password"
+              id="password"
+              required
+            />
+            <button type="submit" class="btn" id="loginButton">Login</button>
+            <button type="button" class="btn cancel" id="cancelButton">
+              Close
+            </button>
+          </form>
+        </div>
+
         <div>
           <table id="staffMessageTable" class="staffMessageTable"></table>
         </div>
